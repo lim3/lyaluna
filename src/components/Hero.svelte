@@ -14,6 +14,8 @@
 </section>
 
 <style lang="scss">
+    @import '../vars.scss';
+    
     section {
         min-height: 50vh;
         background-color: var(--primary);

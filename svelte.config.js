@@ -1,8 +1,7 @@
-// import { assets } from '$app/paths';
 import adapter from '@sveltejs/adapter-static';
 import preprocess from 'svelte-preprocess';
 
-const dev = "production" === "development";
+const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -19,12 +18,21 @@ const config = {
 			pages: "docs",
 			assets: "docs",
 		}),
-		prerender: { default: true},
-		vite: {server: {fs: 'allow'}},
-		paths: {
-			base: dev? "" : "/lyaluna",
+		prerender: {
+			default: true
 		},
-	}
+		vite: {
+			server: {
+				fs: 'allow'
+			}
+		},
+		paths: {
+			base: dev ? "" : "/lyaluna",
+		},
+	},
+	experimental: dev ? {
+		useVitePreprocess: true
+	} : {},
 };
 
 export default config;
