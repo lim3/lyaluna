@@ -30,9 +30,9 @@ const config = {
 			base: dev ? "" : "/lyaluna",
 		},
 	},
-	experimental: dev ? {
+	experimental: dev ? {} : {
 		useVitePreprocess: true
-	} : {},
+	},
 };
 
 export default config;
