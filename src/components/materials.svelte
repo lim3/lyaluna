@@ -120,6 +120,7 @@
         clip-path: polygon(2% 0%, 100% 6%, 97% 97%, 0% 100%);
         z-index: -1;
         transition: transform .3s;
+        transform: scale(0.9);
       }
     }
 
