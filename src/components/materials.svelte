@@ -45,7 +45,7 @@
 
 <style lang="scss">
   section {
-    background-image: url("lyaluna/assets/paper.jpg");
+    background-image: url("/assets/paper.jpg");
     background-size: cover;
   }
   .materials {
