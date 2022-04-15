@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "postbuild": "touch docs/.nojekyll",
+    "postbuild": "touch docs/.nojekyll & echo 'lyaluna.lim3.de' > docs/CNAME",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "prepare": "svelte-kit sync",

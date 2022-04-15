@@ -1,6 +1,6 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-6f2152cf.js",
+    "file": "start-c7eb734c.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
@@ -34,7 +34,7 @@
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-580dd609.js",
+    "file": "pages/index.svelte-f1d8d509.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
@@ -42,7 +42,7 @@
       "_index-d73061f6.js"
     ],
     "css": [
-      "assets/pages/index.svelte-8fc3be8f.css"
+      "assets/pages/index.svelte-b6b98976.css"
     ],
     "assets": [
       "assets/moon-b6b00f5e.jpg",
@@ -50,7 +50,8 @@
       "assets/tetraImg-68311a8d.jpg",
       "assets/fabricImg-7a6b4024.jpg",
       "assets/otherImg-bd91a8c7.jpg",
-      "assets/stand-60114e5d.jpg"
+      "assets/stand-60114e5d.jpg",
+      "assets/paper-c89be1ba.jpg"
     ]
   },
   "_index-d73061f6.js": {

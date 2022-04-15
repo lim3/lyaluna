@@ -55,7 +55,7 @@
     }
 
     .text {
-        background: url("/assets/paper.jpg");
+        background: url("/static/assets/paper.jpg");
         flex: 1;
         margin: auto 0 auto -3rem;
         padding: 4rem;

@@ -27,7 +27,7 @@ const config = {
 			}
 		},
 		paths: {
-			base: dev ? "" : "/lyaluna",
+			base: "",
 		},
 	},
 };
