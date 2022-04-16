@@ -76,4 +76,20 @@
         border-top: 1px solid currentColor;
         border-bottom: 1px solid currentColor;
     }
+
+    @media (max-width: $device-small) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        figure {
+            width: 70vw;
+        }
+
+        .text {
+            margin: -2rem auto 0;
+            padding: 4rem 2rem;
+        }
+    }
 </style>
