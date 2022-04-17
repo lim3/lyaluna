@@ -54,7 +54,7 @@
       position: absolute;
       bottom:0;
       clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
-      transform: scale(1.01);
+      transform: scale(1.1);
       height: 3vh;
       background-color: var(--background);
       left: 0;
