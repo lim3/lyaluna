@@ -47,6 +47,7 @@
 
     figure {
         flex: 1;
+        transform: rotate(-3deg);
 
         img {
             display: block;
@@ -57,7 +58,7 @@
     .text {
         background: url("/static/assets/paper.jpg");
         flex: 1;
-        margin: auto 0 auto -3rem;
+        margin: auto 0 auto -4rem;
         padding: 4rem;
         clip-path: polygon(2% 0%, 100% 6%, 97% 97%, 0% 100%);
 

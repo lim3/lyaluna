@@ -45,8 +45,33 @@
 
 <style lang="scss">
   section {
-    background-image: url("/static/assets/paper.jpg");
     background-size: cover;
+    background-image: url("/static/assets/paper.jpg");
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom:0;
+      clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+      transform: scale(1.01);
+      height: 3vh;
+      background-color: var(--background);
+      left: 0;
+      right: 0;
+    }
+  }
+
+  .title {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    background: var(--dark);
+    color: var(--light);
+    padding: 0 1em;
+    clip-path: polygon(0% 0%, 100% 3%, 97% 100%, 4% 97%);
+    z-index: 2;
+
   }
 
   .materials {

@@ -24,6 +24,21 @@
         justify-content: center;
         flex-direction: row;
         color: var(--light);
+
+        &::after {
+            content: '';
+            background-color: var(--primary);
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 5vh;
+            z-index: 1;
+            clip-path: polygon(0% 0%, 100% 0%, 0% 100%);
+            transform: translateY(100%) scale(1.01);
+        }
     }
 
     .moon {
