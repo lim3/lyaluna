@@ -9,7 +9,7 @@
       background: paperImg,
     },
     {
-      name: "Tetrapack",
+      name: "Tetrapak",
       background: tetraImg,
     },
     {
@@ -26,9 +26,9 @@
 <section>
   <div class="container">
     <h2 class="title large">Materials</h2>
-    <div class="materials container">
+    <div class="materials">
       {#each materials as material}
-        <div class="wrapper">
+        <a href="/materials/{material.name.toLowerCase()}" class="wrapper">
           <div class="image-wrapper">
             {#if material.background}
               <img src={material.background} alt="" aria-hidden="true" />
@@ -37,7 +37,7 @@
           <div class="content">
             <h3>{material.name}</h3>
           </div>
-        </div>
+        </a>
       {/each}
     </div>
   </div>
@@ -71,7 +71,7 @@
     padding: 0 1em;
     clip-path: polygon(0% 0%, 100% 3%, 97% 100%, 4% 97%);
     z-index: 2;
-
+    text-align: center;
   }
 
   .materials {
@@ -144,12 +144,21 @@
     }
   }
 
-  .wrapper:hover {
+  .wrapper:hover,
+  .wrapper:active,
+  .wrapper:focus {
     img {
       transform: scale(1.05);
     }
     h3::before {
       transform: scale(1.05) translate(5%, 5%);
+    }
+  }
+
+  .wrapper:focus {
+    outline: 0;
+    .image-wrapper {
+      box-shadow: -2px -2px 0 5px rgb(172, 124, 248);
     }
   }
 

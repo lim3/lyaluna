@@ -1,48 +1,65 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "start-a071cfaf.js",
+    "file": "start-8703178d.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-d73061f6.js"
+      "_index-396b3103.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
       ".svelte-kit/runtime/components/error.svelte",
-      "src/routes/index.svelte"
+      "src/routes/materials/__layout.svelte",
+      "src/routes/index.svelte",
+      "src/routes/materials/fabric.svelte",
+      "src/routes/materials/others.svelte",
+      "src/routes/materials/paper.svelte",
+      "src/routes/materials/tetrapak.svelte"
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "pages/__layout.svelte-5a54a6a1.js",
+    "file": "pages/__layout.svelte-efcb4935.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d73061f6.js"
+      "_index-396b3103.js"
     ],
     "css": [
-      "assets/pages/__layout.svelte-7ad454b9.css"
+      "assets/global-ee5099c8.css"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "error.svelte-a11a0cbd.js",
+    "file": "error.svelte-38019e99.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d73061f6.js"
+      "_index-396b3103.js"
+    ]
+  },
+  "src/routes/materials/__layout.svelte": {
+    "file": "pages/materials/__layout.svelte-9dc9dde6.js",
+    "src": "src/routes/materials/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-396b3103.js"
+    ],
+    "css": [
+      "assets/global-ee5099c8.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "pages/index.svelte-eceaf4cd.js",
+    "file": "pages/index.svelte-904fe479.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-d73061f6.js"
+      "_index-396b3103.js"
     ],
     "css": [
-      "assets/pages/index.svelte-a6431b71.css"
+      "assets/pages/index.svelte-f548a3b1.css"
     ],
     "assets": [
       "assets/moon-b6b00f5e.jpg",
@@ -54,7 +71,43 @@
       "assets/paper-417116dc.jpg"
     ]
   },
-  "_index-d73061f6.js": {
-    "file": "chunks/index-d73061f6.js"
+  "src/routes/materials/fabric.svelte": {
+    "file": "pages/materials/fabric.svelte-0cfe0184.js",
+    "src": "src/routes/materials/fabric.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-396b3103.js"
+    ]
+  },
+  "src/routes/materials/others.svelte": {
+    "file": "pages/materials/others.svelte-00682fde.js",
+    "src": "src/routes/materials/others.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-396b3103.js"
+    ]
+  },
+  "src/routes/materials/paper.svelte": {
+    "file": "pages/materials/paper.svelte-8283fb3c.js",
+    "src": "src/routes/materials/paper.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-396b3103.js"
+    ]
+  },
+  "src/routes/materials/tetrapak.svelte": {
+    "file": "pages/materials/tetrapak.svelte-792cbefc.js",
+    "src": "src/routes/materials/tetrapak.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_index-396b3103.js"
+    ]
+  },
+  "_index-396b3103.js": {
+    "file": "chunks/index-396b3103.js"
   }
 }

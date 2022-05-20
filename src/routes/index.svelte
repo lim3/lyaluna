@@ -1,7 +1,7 @@
 <script>
-    import Hero from '../components/Hero.svelte'
-    import Materials from '../components/materials.svelte'
-    import Where from '../components/where.svelte'
+    import Hero from '../lib/Hero.svelte'
+    import Materials from '../lib/materials.svelte'
+    import Where from '../lib/where.svelte'
 </script>
 
 <Hero></Hero>
