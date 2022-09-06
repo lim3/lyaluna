@@ -26,20 +26,22 @@
 <section>
   <div class="container">
     <h2 class="title large">Materials</h2>
-    <div class="materials">
+    <ul class="materials">
       {#each materials as material}
-        <a href="/materials/{material.name.toLowerCase()}" class="wrapper">
-          <div class="image-wrapper">
-            {#if material.background}
-              <img src={material.background} alt="" aria-hidden="true" />
-            {/if}
-          </div>
-          <div class="content">
-            <h3>{material.name}</h3>
-          </div>
-        </a>
+        <li>
+          <a href="/materials/{material.name.toLowerCase()}" class="wrapper">
+            <div class="image-wrapper">
+              {#if material.background}
+                <img src={material.background} alt="" aria-hidden="true" />
+              {/if}
+            </div>
+            <div class="content">
+              <h3>{material.name}</h3>
+            </div>
+          </a>
+        </li>
       {/each}
-    </div>
+      </ul>
   </div>
 </section>
 
@@ -75,13 +77,20 @@
   }
 
   .materials {
+    align-items: center;
     display: flex;
     width: 100%;
     gap: 3em;
   }
 
+  li {
+    width: 15rem;
+    max-width: 100%;
+    flex: 0 1 15rem;
+  }
+
   .wrapper {
-    flex: 1;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +109,7 @@
   }
 
   .image-wrapper {
+    transition: transform .3s;
     overflow: hidden;
     border-radius: 50%;
   }
@@ -147,6 +157,8 @@
   .wrapper:hover,
   .wrapper:active,
   .wrapper:focus {
+    .image-wrapper { transform: scale(1.1); }
+
     img {
       transform: scale(1.05);
     }
@@ -155,17 +167,16 @@
     }
   }
 
-  .wrapper:focus {
+  .wrapper:focus-visible  {
     outline: 0;
     .image-wrapper {
-      box-shadow: -2px -2px 0 5px rgb(172, 124, 248);
+      box-shadow: -2px -2px 0 5px var(--primary);
     }
   }
 
   @media (max-width: $device-small) {
     .materials {
       flex-direction: column;
-      max-width: 15rem;
     }
 
     h3 { 

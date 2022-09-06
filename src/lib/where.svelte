@@ -5,9 +5,14 @@
         {
             name: 'Faust Flohmarkt',
             // location: 'Faust',
-            where: 'Fauststr. 12, Hannover',
-            when: 'Jeden Sonntag, 10:00 - 18:00'
+            // where: 'Fauststr. 12, Hannover',
+            when: 'Jeden Sonntag, 07:00 - 17:00'
         },
+        // {
+        //     name: 'Mulembe Kaffee',
+        //     where: 'Harenberger Str. 3, Hannover',
+        //     when: 'Do - Mo 13:00 - 18:00',
+        // },
     ]
 </script>
 
@@ -20,7 +25,7 @@
             <div class="text" style="--background: var(--light2);">
                 <h2 class="title">Where to find me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    I sell my art at different places. Sundays, you can usually find me at the Faust Flohmarkt. Some stuff is also for sale in the Mulembe Kaffee.
                 </p>
                 <ul class="events">
                     {#each events as event}
@@ -61,10 +66,6 @@
         margin: auto 0 auto -4rem;
         padding: 4rem;
         clip-path: polygon(2% 0%, 100% 6%, 97% 97%, 0% 100%);
-
-        p {
-            margin-bottom: 4em;
-        }
     }
 
     h4 {
@@ -72,10 +73,11 @@
     }
 
     .event {
-        margin: 1em 0;
+        margin: 0;
         padding: .5em;
-        border-top: 1px solid currentColor;
         border-bottom: 1px solid currentColor;
+
+        &:first-child { border-top: 1px solid currentColor; }
     }
 
     @media (max-width: $device-small) {

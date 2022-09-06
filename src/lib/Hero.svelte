@@ -9,7 +9,7 @@
     <div class="container text">
         <h1 class="title large">Lyaluna</h1>
         <h2 class="subtitle">Upcycling &bull;  Art &bull; DIY</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+        <p>Hi I'm making stuff myself. I take used and broken products which are thrown away and use them to make new stuff out of it and give it a new life. All my products are unique and handmade. </p>
     </div>
 </section>
 
