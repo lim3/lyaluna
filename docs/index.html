@@ -3,68 +3,25 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
-		<link rel="icon" href="./favicon.png" />
+		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/assets/global-ee5099c8.css">
-	<link rel="stylesheet" href="/_app/assets/pages/index.svelte-f548a3b1.css">
-	<link rel="modulepreload" href="/_app/start-8703178d.js">
-	<link rel="modulepreload" href="/_app/chunks/index-396b3103.js">
-	<link rel="modulepreload" href="/_app/pages/__layout.svelte-efcb4935.js">
-	<link rel="modulepreload" href="/_app/pages/index.svelte-904fe479.js">
+		<link rel="modulepreload" href="/_app/immutable/start-fe8b1bc2.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-0696beeb.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-2323c2a6.js">
 	</head>
 	<body>
 		<main>
+		<script type="module" data-sveltekit-hydrate="45h">
+			import { start } from "/_app/immutable/start-fe8b1bc2.js";
 
-
-<section class="hero luna-Hero"><div class="moon luna-Hero" aria-hidden="true"><img src="/_app/assets/moon-b6b00f5e.jpg" alt="" class="luna-Hero"></div>
-    <div class="container text luna-Hero"><h1 class="title large luna-Hero">Lyaluna</h1>
-        <h2 class="subtitle luna-Hero">Upcycling •  Art • DIY</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p></div>
-</section>
-<section class="luna-Materials"><div class="container"><h2 class="title large luna-Materials">Materials</h2>
-    <div class="materials luna-Materials"><a href="/materials/paper" class="wrapper luna-Materials"><div class="image-wrapper luna-Materials"><img src="/_app/assets/paperImg-aaf359c9.jpg" alt="" aria-hidden="true" class="luna-Materials"></div>
-          <div class="content luna-Materials"><h3 class="luna-Materials">Paper</h3></div>
-        </a><a href="/materials/tetrapak" class="wrapper luna-Materials"><div class="image-wrapper luna-Materials"><img src="/_app/assets/tetraImg-8be59365.jpg" alt="" aria-hidden="true" class="luna-Materials"></div>
-          <div class="content luna-Materials"><h3 class="luna-Materials">Tetrapak</h3></div>
-        </a><a href="/materials/fabric" class="wrapper luna-Materials"><div class="image-wrapper luna-Materials"><img src="/_app/assets/schweine-e47680c0.jpg" alt="" aria-hidden="true" class="luna-Materials"></div>
-          <div class="content luna-Materials"><h3 class="luna-Materials">Fabric</h3></div>
-        </a><a href="/materials/others" class="wrapper luna-Materials"><div class="image-wrapper luna-Materials"><img src="/_app/assets/otherImg-51f13638.jpg" alt="" aria-hidden="true" class="luna-Materials"></div>
-          <div class="content luna-Materials"><h3 class="luna-Materials">Others</h3></div>
-        </a></div></div>
-</section>
-<section><div class="container"><div class="wrapper luna-Where"><figure class="luna-Where"><img src="/_app/assets/stand-e72b40ab.jpg" alt="" class="luna-Where"></figure>
-            <div class="text luna-Where" style="--background: var(--light2);"><h2 class="title">Where to find me</h2>
-                <p class="luna-Where">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                </p>
-                <ul class="events"><li class="event luna-Where"><h4 class="luna-Where">Faust Flohmarkt</h4>
-                            <div class="meta">
-                                <span class="when">Jeden Sonntag, 10:00 - 18:00</span>
-                                <span class="where"><!-- HTML_TAG_START -->Fauststr. 12, Hannover<!-- HTML_TAG_END --></span></div>
-                        </li></ul></div></div></div>
-</section>
-
-
-		<script type="module" data-sveltekit-hydrate="oucesc">
-		import { start } from "/_app/start-8703178d.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="oucesc"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [
-					import("/_app/pages/__layout.svelte-efcb4935.js"),
-						import("/_app/pages/index.svelte-904fe479.js")
-				],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script></main>
+			start({
+				env: {},
+				hydrate: null,
+				paths: {"base":"","assets":""},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				trailing_slash: "never"
+			});
+		</script></main>
 	</body>
 </html>
