@@ -2,12 +2,11 @@
   "name": "website",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev",
-    "build": "svelte-kit build",
-    "postbuild": "touch docs/.nojekyll & echo 'lyaluna.lim3.de' > docs/CNAME",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview",
-    "prepare": "svelte-kit sync",
+    "dev": "vite dev",
+    "build": "vite build",
+    "postbuild": "touch docs/.nojekyll & echo 'lyaluna.de' > docs/CNAME",
+    "package": "vite package",
+    "preview": "vite preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "eslint --ignore-path .gitignore ."
@@ -25,7 +24,8 @@
     "svelte-check": "^2.2.6",
     "svelte-preprocess": "^4.10.1",
     "tslib": "^2.3.1",
-    "typescript": "~4.6.2"
+    "typescript": "~4.6.2",
+    "vite": "^3.1.0"
   },
   "type": "module"
 }
