@@ -1,11 +1,11 @@
 {
-  "src/lib/assets/moon.jpg": {
-    "file": "_app/immutable/assets/moon-b6b00f5e.jpg",
-    "src": "src/lib/assets/moon.jpg"
-  },
   "src/lib/assets/stand.jpg": {
     "file": "_app/immutable/assets/stand-e72b40ab.jpg",
     "src": "src/lib/assets/stand.jpg"
+  },
+  "src/lib/assets/moon.jpg": {
+    "file": "_app/immutable/assets/moon-b6b00f5e.jpg",
+    "src": "src/lib/assets/moon.jpg"
   },
   "src/lib/assets/tetraImg.png": {
     "file": "_app/immutable/assets/tetraImg-5f0498d4.png",
@@ -28,12 +28,12 @@
     "src": "src/lib/assets/paper.png"
   },
   "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
-    "file": "_app/immutable/start-fd8a4e3c.js",
+    "file": "_app/immutable/start-c0dfe6f0.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
     "isEntry": true,
     "imports": [
       "_index-0696beeb.js",
-      "_singletons-ded0114f.js"
+      "_singletons-ca80f090.js"
     ],
     "dynamicImports": [
       ".svelte-kit/generated/nodes/0.js",
@@ -60,12 +60,12 @@
     ]
   },
   "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
-    "file": "_app/immutable/components/error.svelte-8301ca5d.js",
+    "file": "_app/immutable/components/error.svelte-be064127.js",
     "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte",
     "isEntry": true,
     "imports": [
       "_index-0696beeb.js",
-      "_singletons-ded0114f.js"
+      "_singletons-ca80f090.js"
     ]
   },
   "src/routes/materials/+layout.svelte": {
@@ -80,7 +80,7 @@
     ]
   },
   "src/routes/+page.svelte": {
-    "file": "_app/immutable/components/pages/_page.svelte-eff6be83.js",
+    "file": "_app/immutable/components/pages/_page.svelte-41825c08.js",
     "src": "src/routes/+page.svelte",
     "isEntry": true,
     "imports": [
@@ -158,8 +158,8 @@
       "__layout-1daba58d.js"
     ]
   },
-  "_singletons-ded0114f.js": {
-    "file": "_app/immutable/chunks/singletons-ded0114f.js",
+  "_singletons-ca80f090.js": {
+    "file": "_app/immutable/chunks/singletons-ca80f090.js",
     "imports": [
       "_index-0696beeb.js"
     ]
@@ -189,7 +189,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/1.js": {
-    "file": "_app/immutable/chunks/1-344e9493.js",
+    "file": "_app/immutable/chunks/1-12b56672.js",
     "src": ".svelte-kit/generated/nodes/1.js",
     "isDynamicEntry": true,
     "imports": [
@@ -205,7 +205,7 @@
     ]
   },
   ".svelte-kit/generated/nodes/3.js": {
-    "file": "_app/immutable/chunks/3-11d631fe.js",
+    "file": "_app/immutable/chunks/3-96b5ec84.js",
     "src": ".svelte-kit/generated/nodes/3.js",
     "isDynamicEntry": true,
     "imports": [
@@ -260,13 +260,13 @@
       "src/routes/materials/tetrapak/+page.svelte"
     ]
   },
-  "global.css": {
-    "file": "_app/immutable/assets/global-d8ec8bba.css",
-    "src": "global.css"
-  },
   "footer.css": {
     "file": "_app/immutable/assets/footer-55faf0fc.css",
     "src": "footer.css"
+  },
+  "global.css": {
+    "file": "_app/immutable/assets/global-d8ec8bba.css",
+    "src": "global.css"
   },
   "src/routes/+page.css": {
     "file": "_app/immutable/assets/_page-d93f047b.css",
