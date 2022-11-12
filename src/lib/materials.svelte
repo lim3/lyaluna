@@ -1,42 +1,60 @@
-<script>
-  import paperImg from "/static/assets/paperImg.jpg";
-  import tetraImg from "/static/assets/tetraImg.jpg";
-  import fabricImg from "/static/assets/schweine.jpg";
-  import otherImg from "/static/assets/otherImg.jpg";
-  let materials = [
+<script lang="ts">
+  import paperImg from "$lib/assets/paper.png";
+  import tetraImg from "$lib/assets/tetraImg.png";
+  import fabricImg from "$lib/assets/schweine.png";
+  import otherImg from "$lib/assets/otherImg.png";
+  import accessoriesImg from "$lib/assets/accessories.png";
+  import type { Material } from "./types";
+    import { modal } from "./stores";
+  
+  let materials: Material[] = [
     {
-      name: "Paper",
-      background: paperImg,
-    },
-    {
-      name: "Tetrapak",
+      slug:'containers',
+      title: 'Containers',
+      description: 'Those are versatile containers that you can use for pencils or to store cookies and many other stuff. The containers are made of milk or chips containers and repainted with my Art or with a collage. All containers are unique.',
       background: tetraImg,
     },
     {
-      name: "Fabric",
+      slug:'office',
+      title: 'Office',
+      background: paperImg,
+    },
+    {
+      slug:'toys',
+      title: 'Cuddly Toys',
       background: fabricImg,
     },
     {
-      name: "Others",
+      slug:'bathroom',
+      title: 'Bathroom',
       background: otherImg,
     },
+    {
+      slug:'accessoires',
+      title: 'Accessories',
+      background: accessoriesImg,
+    }
   ];
+
+  function openModal(material: Material) {
+    modal.set(material);
+  }
 </script>
 
 <section>
   <div class="container">
-    <h2 class="title large">Materials</h2>
+    <h2 class="title large">Products</h2>
     <ul class="materials">
       {#each materials as material}
         <li>
-          <a href="/materials/{material.name.toLowerCase()}" class="wrapper">
+          <a href="#" on:click|preventDefault={ () => openModal(material)} class="wrapper">
             <div class="image-wrapper">
               {#if material.background}
                 <img src={material.background} alt="" aria-hidden="true" />
               {/if}
             </div>
             <div class="content">
-              <h3>{material.name}</h3>
+              <h3>{material.title}</h3>
             </div>
           </a>
         </li>
@@ -48,7 +66,7 @@
 <style lang="scss">
   section {
     background-size: cover;
-    background-image: url("/static/assets/paper.jpg");
+    background-image: url("/assets/paper.jpg");
     position: relative;
 
     &::after {
@@ -81,12 +99,13 @@
     display: flex;
     width: 100%;
     gap: 3em;
+    // flex-wrap: wrap;
   }
 
   li {
     width: 15rem;
     max-width: 100%;
-    flex: 0 1 15rem;
+    flex: 1 1 18%;
   }
 
   .wrapper {
@@ -100,18 +119,17 @@
     cursor: pointer;
 
     img {
-      aspect-ratio: 1/1;
+      aspect-ratio: 1 / 1;
       display: block;
-      object-fit: cover;
-      transition: transform 0.3s;
+      object-fit: contain;
+      transition: transform 0.2s, filter 0.1s;
       width: 100%;
     }
   }
 
   .image-wrapper {
     transition: transform .3s;
-    overflow: hidden;
-    border-radius: 50%;
+    // overflow: hidden;
   }
 
   .content {
@@ -126,10 +144,10 @@
 
   h3 {
     margin: auto auto 2rem 0;
-    font-size: 1.5em;
+    font-size: 1em;
     color: var(--text);
-    padding: 0.4rem 1rem;
-    font-weight: 800;
+    padding: 0.6rem 1.6rem;
+    font-weight: 400;
     transform: translateX(-1rem);
 
     &::after {
@@ -157,10 +175,11 @@
   .wrapper:hover,
   .wrapper:active,
   .wrapper:focus {
-    .image-wrapper { transform: scale(1.1); }
+    .image-wrapper { transform: scale(1); }
 
     img {
       transform: scale(1.05);
+      filter: drop-shadow(3px 3px 0 var(--dark));
     }
     h3::before {
       transform: scale(1.05) translate(5%, 5%);
@@ -174,7 +193,7 @@
     }
   }
 
-  @media (max-width: $device-small) {
+  @media (max-width: 900px) {
     .materials {
       flex-direction: column;
     }

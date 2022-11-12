@@ -1,12 +1,12 @@
-<script>
-    import stand from '/static/assets/stand.jpg'
+<script lang="ts">
+    import stand from '$lib/assets/stand.jpg'
 
     let events = [
         {
             name: 'Faust Flohmarkt',
-            // location: 'Faust',
-            // where: 'Fauststr. 12, Hannover',
-            when: 'Jeden Sonntag, 07:00 - 17:00'
+            location: 'Faust',
+            where: '<a href="https://www.kulturzentrum-faust.de/" target ="_blank">Kulturzentrum Faust</a>',
+            when: 'Sundays, 07:00 - 17:00'
         },
         // {
         //     name: 'Mulembe Kaffee',
@@ -22,23 +22,25 @@
             <figure>
                 <img src="{stand}" alt="">
             </figure>
-            <div class="text" style="--background: var(--light2);">
-                <h2 class="title">Where to find me</h2>
-                <p>
-                    I sell my art at different places. Sundays, you can usually find me at the Faust Flohmarkt. Some stuff is also for sale in the Mulembe Kaffee.
-                </p>
-                <ul class="events">
-                    {#each events as event}
-                        <li class="event">
-                            <h4>{event.name}</h4>
-                            <div class="meta">
-                                {#if event.location }{event.location},{/if}
-                                <span class="when">{event.when}</span>
-                                <span class="where">{@html event.where}</span>
-                            </div>
-                        </li>
-                    {/each}
-                </ul>
+            <div class="shadowcast">
+                <div class="text" style="--background: var(--light2);">
+                    <h2 class="title bold">Where to find me</h2>
+                    <p>
+                        I sell my art at different places. Sundays, you can usually find me at the Faust Flohmarkt.
+                    </p>
+                    <ul class="events">
+                        {#each events as event}
+                            <li class="event">
+                                <h4>{event.name}</h4>
+                                <div class="meta">
+                                    {#if event.location }{event.location},{/if}
+                                    <span class="when">{event.when}</span>
+                                    <span class="where">{@html event.where}</span>
+                                </div>
+                            </li>
+                        {/each}
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -60,12 +62,18 @@
         }
     }
 
-    .text {
-        background: url("/static/assets/paper.jpg");
+    .shadowcast {
         flex: 1;
         margin: auto 0 auto -4rem;
-        padding: 4rem;
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,.25))
+
+    }
+
+    .text {
         clip-path: polygon(2% 0%, 100% 6%, 97% 97%, 0% 100%);
+        padding: 4rem;
+        z-index: 2;
+        background: url("/assets/paper.jpg");
     }
 
     h4 {
@@ -80,7 +88,7 @@
         &:first-child { border-top: 1px solid currentColor; }
     }
 
-    @media (max-width: $device-small) {
+    @media (max-width: 900px) {
         .wrapper {
             flex-direction: column;
             align-items: center;
@@ -91,8 +99,11 @@
         }
 
         .text {
-            margin: -2rem auto 0;
             padding: 4rem 2rem;
+        }
+        
+        .shadowcast {
+            margin: -2rem auto 0;
         }
     }
 </style>

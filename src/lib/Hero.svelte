@@ -1,21 +1,19 @@
 <script>
-    import moon from '/static/assets/moon.jpg'
+    import moon from '$lib/assets/moon.png'
 </script>
 
 <section class="hero">
     <div class="moon" aria-hidden="true">
-        <img src="{moon}" alt="">
+        <img src={moon} alt="">
     </div>
     <div class="container text">
         <h1 class="title large">Lyaluna</h1>
-        <h2 class="subtitle">Upcycling &bull;  Art &bull; DIY</h2>
+        <h2 class="subtitle">Extraordinary art on ordinary objects</h2>
         <p>Hi I'm making stuff myself. I take used and broken products which are thrown away and use them to make new stuff out of it and give it a new life. All my products are unique and handmade. </p>
     </div>
 </section>
 
 <style lang="scss">
-    @import '../vars.scss';
-    
     section {
         min-height: 50vh;
         background-color: var(--primary);
@@ -44,15 +42,8 @@
     .moon {
         position: relative;
         img { 
-            mix-blend-mode: screen;
             width: 20em;
             height: auto;
-        }
-        &::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background-color: var(--primary);
         }
     }
 
@@ -70,7 +61,7 @@
         margin-bottom: 1rem;
     }
 
-    @media (max-width: $device-small) {
+    @media (max-width: 900px) {
         section { flex-direction: column; }
         .moon img { width: 10rem; }
     }  

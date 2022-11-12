@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;800&family=Amatic+SC:wght@400;700&display=swap');
 @import 'vars';
 
 :root {
@@ -15,13 +15,14 @@ html {
     font-size: 100%;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
+    font-weight: 300;
 }
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--background);
-    color: var(--text)
+    color: var(--text);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -29,10 +30,18 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+h3 {
+    font-size:1.5rem;
+}
+
 p {
     margin:0 0 1rem;
     line-height: 1.5;
-}ac
+}
+
+a {
+    color: inherit;
+}
 
 section {
     position: relative;
@@ -41,16 +50,17 @@ section {
 }
 
 .title {
+    font-family: 'Amatic SC';
     font-size: 3rem;
     text-align: left;
     margin-bottom: 3rem;
-    color: var(--text);
-    font-weight: 800;
-    text-decoration: underline dotted;
+    font-weight: 400;
 
     &.large {
         font-size: 4rem;
     }
+
+    &.bold { font-weight: 700; }
 }
 
 .container {
@@ -81,14 +91,20 @@ button{
     font-size: 1em;
 }
 
+img { display: block;}
+
 
 @media (max-width: $device-small) {
+    html {
+        font-size: 14px;
+    }
+
     section {
         padding: 5rem 0;
     }
 
     .title { 
-        font-size: 2rem;
+        font-size: 3rem;
 
         &.large {
             font-size: 3rem;
